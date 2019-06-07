@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:app="http://schemas.android.com/apk/res-auto">
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <SwitchPreferenceCompat
-            app:key="notifications"
-            app:title="Enable message notifications"/>
+    <PreferenceCategory
+    android:title="Account">
 
-    <Preference
-            app:key="feedback"
-            app:title="Send feedback"
-            app:summary="Report technical issues or suggest new features" android:visibility="visible"/>
+
+        <Preference
+                app:key="account"
+                app:title="Premium"
+                app:summary="Trial period expires on 15 June"
+                android:visibility="visible"
+                />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:title="Receive Notifications">
+
+        <CheckBoxPreference
+                app:key="notifications0"
+                app:title="South East Asia market"
+                android:textSize="10sp"
+                android:fontFamily="@font/pfdintextcondpro_regular_0"
+                android:id="@+id/checkbox0"
+                android:checked="true"
+                />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

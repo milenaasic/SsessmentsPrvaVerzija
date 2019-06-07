@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ssessments.data.getNewsItemArray
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class mainFragment : Fragment() {
@@ -25,10 +26,10 @@ class mainFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
+
     }
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -36,37 +37,17 @@ class mainFragment : Fragment() {
 
         val root=inflater.inflate(R.layout.fragment_main, container, false)
 
-
-
-        val myToolbar=root.findViewById<Toolbar>(R.id.toolbar)
-        val mainActivity=activity as androidx.appcompat.app.AppCompatActivity
-        mainActivity.setSupportActionBar(myToolbar)
-
         recyclerView=root.findViewById(R.id.mainRecView)
-        recyclerView.layoutManager = LinearLayoutManager(activity)
         recyclerView.adapter=NewsAdapter(getNewsItemArray())
         recyclerView.addItemDecoration(DividerItemDecoration(activity,DividerItemDecoration.VERTICAL))
-
-
 
         return root
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.settings,menu)
 
-
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        this.findNavController().navigate(R.id.mySettingsFragment)
-        //return super.onOptionsItemSelected(item)
-        return true
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+    override fun onResume() {
+        super.onResume()
+        val activity:AppCompatActivity= activity as AppCompatActivity
+        activity.tagsLayout.visibility=View.VISIBLE
     }
 }
