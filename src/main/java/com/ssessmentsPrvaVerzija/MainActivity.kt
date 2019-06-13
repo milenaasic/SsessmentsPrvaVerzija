@@ -1,4 +1,4 @@
-package com.ssessments
+package com.ssessmentsPrvaVerzija
 
 import android.app.SearchManager
 import android.content.ComponentName
@@ -17,12 +17,10 @@ import androidx.appcompat.widget.Toolbar
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
-import com.ssessments.search.MySuggestionProvider
+import com.ssessmentsPrvaVerzija.search.MySuggestionProvider
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         inflater.inflate(R.menu.settings, menu)
         Log.v("milena ","on create")
         val searchManager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
-        var apply = (menu!!.findItem(R.id.action_search).actionView as SearchView).apply {
+        var searchView = (menu!!.findItem(R.id.action_search).actionView as SearchView).apply {
             // Assumes current activity is the searchable activity
             setSearchableInfo(
                 searchManager.getSearchableInfo(
@@ -69,6 +67,7 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+        //searchView.scrollBarStyle=resources.getResourceEntryName(R.style.AppTheme)
         return true
 
     }

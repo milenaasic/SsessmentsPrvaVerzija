@@ -6,8 +6,8 @@
             android:icon="@android:drawable/ic_menu_search"
             app:actionViewClass="androidx.appcompat.widget.SearchView"
             android:title="Search"
-            android:checkable="false"
-            app:showAsAction="always"/>
+            app:showAsAction="always"
+            />
 
 
 </menu>

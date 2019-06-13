@@ -1,4 +1,4 @@
-package com.ssessments.search
+package com.ssessmentsPrvaVerzija.search
 
 import android.content.SearchRecentSuggestionsProvider
 

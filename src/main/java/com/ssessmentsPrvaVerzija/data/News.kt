@@ -1,4 +1,4 @@
-package com.ssessments.data
+package com.ssessmentsPrvaVerzija.data
 
 
 

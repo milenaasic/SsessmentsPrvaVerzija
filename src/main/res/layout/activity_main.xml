@@ -44,7 +44,10 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_width="match_parent"
                 app:layout_scrollFlags="scroll|enterAlways"
-                app:titleTextColor="@color/logoPurple" android:theme="@style/myToolbarTheme">
+                app:titleTextColor="@color/logoPurple"
+                app:theme="@style/myToolbarTheme"
+                >
+
         </androidx.appcompat.widget.Toolbar>
 
 

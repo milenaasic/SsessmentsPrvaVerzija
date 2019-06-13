@@ -1,12 +1,11 @@
-package com.ssessments
+package com.ssessmentsPrvaVerzija
 
 
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
-
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MySettingsFragment : PreferenceFragmentCompat() {
@@ -14,10 +13,12 @@ class MySettingsFragment : PreferenceFragmentCompat() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+        val activity: AppCompatActivity = activity as AppCompatActivity
+        activity.tagsLayout.visibility=View.GONE
     }
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        setPreferencesFromResource(R.xml.settings, rootKey)
+        setPreferencesFromResource(R.xml.preference_notifications, rootKey)
     }
 
     override fun onPrepareOptionsMenu(menu: Menu) {

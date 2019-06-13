@@ -1,4 +1,4 @@
-package com.ssessments.search
+package com.ssessmentsPrvaVerzija.search
 
 import android.app.SearchManager
 import android.content.Intent
@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.SearchRecentSuggestions
 import android.util.Log
-import com.ssessments.R
+import com.ssessmentsPrvaVerzija.R
 
 class SearchableActivity : AppCompatActivity() {
 

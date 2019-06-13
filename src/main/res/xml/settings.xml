@@ -3,20 +3,6 @@
                   xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
-    android:title="Account">
-
-
-        <Preference
-                app:key="account"
-                app:title="Premium"
-                app:summary="Trial period expires on 15 June"
-                android:visibility="visible"
-                />
-
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
         android:title="Receive Notifications">
 
         <CheckBoxPreference

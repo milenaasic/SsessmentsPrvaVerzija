@@ -1,4 +1,4 @@
-package com.ssessments
+package com.ssessmentsPrvaVerzija
 
 import org.junit.Test
 

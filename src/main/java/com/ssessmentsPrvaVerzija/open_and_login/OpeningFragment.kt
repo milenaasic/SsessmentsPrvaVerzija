@@ -1,18 +1,13 @@
-package com.ssessments.open_and_login
+package com.ssessmentsPrvaVerzija.open_and_login
 
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.GONE
-import android.view.View.INVISIBLE
 import android.view.ViewGroup
-import androidx.appcompat.widget.Toolbar
 
-import com.ssessments.R
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.view.*
+import com.ssessmentsPrvaVerzija.R
 
 
 class OpeningFragment : Fragment() {

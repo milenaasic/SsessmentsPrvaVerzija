@@ -1,19 +1,13 @@
-package com.ssessments
+package com.ssessmentsPrvaVerzija
 
 
-import android.os.Build
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ssessments.data.getNewsItemArray
+import com.ssessmentsPrvaVerzija.data.getNewsItemArray
 import kotlinx.android.synthetic.main.activity_main.*
 
 

@@ -1,4 +1,4 @@
-package com.ssessments
+package com.ssessmentsPrvaVerzija
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
